@@ -1,4 +1,4 @@
-### CentOS7.4环境下的Docker安装
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CentOS7.4环境下的Docker安装
 
    
 
@@ -26,7 +26,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  ![输入图片说明](https://images.gitee.com/uploads/images/2018/1222/224430_746ec181_1648495.png "屏幕截图.png") <br>
 
   
-  6)如下图，使用命令 sudo systemctl start docker 启动Docker后台服务,同时获取到的docker版本。  <br>
-&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  
+  6)使用命令 sudo systemctl start docker 启动Docker后台服务,同时获取到的docker版本。
+
 
  
