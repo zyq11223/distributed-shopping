@@ -6,7 +6,7 @@
 - MySQL索引原理
 
 #### 设计模式
-- [单例模式](https://gitee.com/BaoFengLaoYing/distributedSecKillShopping/blob/master/docs/design_model/singleton.md)
+- [单例模式](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/design_model/singleton.md)
 
 #### 多线程
 - sychronized关键字原理
@@ -19,9 +19,9 @@
 
 
 #### 应用程序框架
-- [SpringMVC基本工作原理](https://gitee.com/BaoFengLaoYing/distributedSecKillShopping/blob/master/docs/framework/springMVC.md)
+- [SpringMVC基本工作原理](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/framework/springMVC.md)
 - Springboot启动过程
-- [Mybatis基本工作原理](https://gitee.com/BaoFengLaoYing/distributedSecKillShopping/blob/master/docs/theory/mybatis.md)
+- [Mybatis基本工作原理](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/theory/mybatis.md)
 
 #### 优化策略
 - Tomcat优化
@@ -30,21 +30,21 @@
 #### 网络技术
 - Http协议原理
 - TCP协议介绍
-- [重定向与转发](https://gitee.com/BaoFengLaoYing/distributedSecKillShopping/blob/master/docs/network/forward_redirect.md)
+- [重定向与转发](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/network/forward_redirect.md)
 
  
 #### 架构设计
-- [Session工作原理](https://gitee.com/BaoFengLaoYing/distributedSecKillShopping/blob/master/docs/theory/session.md)
-- [超卖问题处理](https://gitee.com/BaoFengLaoYing/distributedSecKillShopping/blob/master/docs/oversold/oversold.md)
-- [弃用JSP原因](https://gitee.com/BaoFengLaoYing/distributedSecKillShopping/blob/master/docs/structure/jspleave.md)
-- [Docker环境配置](https://gitee.com/BaoFengLaoYing/distributedSecKillShopping/blob/master/docs/install/docker.md) <br>
--  [RabbitMQ消息队列安装](https://gitee.com/BaoFengLaoYing/distributedSecKillShopping/blob/master/docs/install/rabbitMQ.md)   <br>
--  [Redis集群安装配置](https://gitee.com/BaoFengLaoYing/distributedSecKillShopping/blob/master/docs/install/rediscluster.md)
+- [Session工作原理](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/theory/session.md)
+- [超卖问题处理](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/oversold/oversold.md)
+- [弃用JSP原因](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/structure/jspleave.md)
+- [Docker环境配置](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/install/docker.md) <br>
+-  [RabbitMQ消息队列安装](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/install/rabbitMQ.md)   <br>
+-  [Redis集群安装配置](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/install/rediscluster.md)
 - MySQL读写分离配置
 - Docker部署项目流程
 
 ####  作者声明
-- [本人声明](https://gitee.com/BaoFengLaoYing/distributedSecKillShopping/blob/master/docs/declaration.md)
+- [本人声明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/declaration.md)
 
 ####  联系作者
 &nbsp; &nbsp;&nbsp; QQ: &nbsp; &nbsp; 619626930  <br>
