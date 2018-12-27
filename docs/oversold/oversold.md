@@ -1,4 +1,4 @@
-### 超卖现象
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 超卖现象
 我们考虑这样一种情形，如某个参与被秒杀的商品目前库存数量为1，此时有两个用户同时购买该商品(减库存操作)。用户1提交订单后该商品的库存数量修改为0，此时当用户2不知情的情况下，提交了订单，该商品库存数量被修改为-1，显然用户2不可能秒杀成功，这就是在电商领域常见的超卖现象。<br>
 ![输入图片说明](https://images.gitee.com/uploads/images/2018/1014/234928_7efb1f3e_1648495.png "2.png")<br>
 原因：数据库底层的读写操作可同时进行，写操作默认有隐式锁，而读操作默认是不带锁的，故两个用户可同时查看到目前库存数量为1。<br>
