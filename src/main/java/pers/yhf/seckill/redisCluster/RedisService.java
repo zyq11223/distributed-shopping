@@ -1,7 +1,5 @@
 package pers.yhf.seckill.redisCluster;
 
-import java.io.IOException;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,10 +47,8 @@ public class RedisService {
     		 }
           catch (Exception ex){
             log.error("setToRedis:{Key:"+key+",value"+value+"}",ex);
-        }/*finally{
-        	returnToClusterPool(jedisCluster); 
-        }*/
-        return false;
+        }
+         return false;
     }
 
     
@@ -60,16 +56,12 @@ public class RedisService {
     
 	public <T> T get(KeyPrefix prefix,String key, Class<T> clazz){ 
         JedisCluster jedisCluster = null;
-       // try {
-        	jedisCluster = jedisClusterConfig.getJedisCluster();
+          jedisCluster = jedisClusterConfig.getJedisCluster();
         	//生成真正的key
 		    String realKey = prefix.getPrefix()+key;
             String str=jedisCluster.get(realKey);
             T t = stringToBean(str,clazz);
-		    return t;
-      //  }finally{
-        //	returnToClusterPool(jedisCluster); 
-		// }
+		    return t; 
 	 }
      
 	
@@ -78,8 +70,7 @@ public class RedisService {
 		 if(str ==null || str.length()<=0 || clazz == null){
 			 return null;
 		 }
-		 
-		 if(clazz == int.class || clazz == Integer.class){
+		  if(clazz == int.class || clazz == Integer.class){
 				return (T)Integer.valueOf(str); 
 			}
 			else if(clazz == String.class){
@@ -115,7 +106,8 @@ public class RedisService {
 	 }
  
 
-	private void returnToClusterPool(JedisCluster jedisCluster) { 
+	/*
+	 * private void returnToClusterPool(JedisCluster jedisCluster) { 
 		if(jedisCluster!=null){
 			try {
 				jedisCluster.close();
@@ -123,7 +115,8 @@ public class RedisService {
 				e.printStackTrace();
 			}
 		}
-	}
+	   }
+	*/
 
 	
 	
@@ -131,64 +124,49 @@ public class RedisService {
 	 * 判断key是否存在
 	 * */
 	public <T> boolean exists(KeyPrefix prefix, String key) {
-		JedisCluster jedisCluster = null;
-		// try {
+		    JedisCluster jedisCluster = null; 
 			 jedisCluster = jedisClusterConfig.getJedisCluster();
 			//生成真正的key
 			 String realKey  = prefix.getPrefix() + key;
 			return jedisCluster.exists(realKey);
-		// }finally {
-		//	  returnToClusterPool(jedisCluster);
-		// }
-	}
+	     }
  
 	
 	/**
 	 * 增加值
 	 * */
 	public <T> Long incr(KeyPrefix prefix, String key) {
-		JedisCluster jedisCluster = null;
-		// try {
+		JedisCluster jedisCluster = null; 
 			 jedisCluster = jedisClusterConfig.getJedisCluster();
 			//生成真正的key
 			 String realKey  = prefix.getPrefix() + key;
 			return  jedisCluster.incr(realKey);
-		// }finally {
-		//	 returnToClusterPool(jedisCluster);
-		// }
-	}
+	  }
+	
 	
 	/**
 	 * 减少值
 	 * */
 	public <T> Long decr(KeyPrefix prefix, String key) {
-		JedisCluster jedisCluster = null;
-		// try {
+		JedisCluster jedisCluster = null; 
 			 jedisCluster = jedisClusterConfig.getJedisCluster();
 			//生成真正的key
 			 String realKey  = prefix.getPrefix() + key;
 			return  jedisCluster.decr(realKey);
-		// }finally {
-		//	 returnToClusterPool(jedisCluster);
-		// }
-	}
+	 }
 	
 	
 	/**
 	 * 删除
 	 * */
 	public boolean delete(KeyPrefix prefix, String key) {
-		JedisCluster jedisCluster = null;
-		 //try {
+		JedisCluster jedisCluster = null; 
 			 jedisCluster = jedisClusterConfig.getJedisCluster();
 			//生成真正的key
 			 String realKey  = prefix.getPrefix() + key;
 			 long ret = jedisCluster.del(realKey);
 			 return ret>0; 
-		// }finally {
-		//	 returnToClusterPool(jedisCluster);
-		 //}
-	}
+	 }
  
 	
 	
