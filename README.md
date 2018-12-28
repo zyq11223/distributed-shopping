@@ -21,7 +21,7 @@
 #### 应用程序框架
 - [SpringMVC基本工作原理](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/framework/springMVC.md)
 - Springboot启动过程
-- [Mybatis基本工作原理](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/theory/mybatis.md)
+- [Mybatis基本工作原理](https://github.com/yhf56davis/distributedshopping/blob/237b4ec4a1748e6d36395767c4212e7281334c06/docs/theory/mybatis.md)
 
 #### 优化策略
 - Tomcat优化
