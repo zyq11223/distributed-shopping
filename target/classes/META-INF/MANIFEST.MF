@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Implementation-Title: distributedshopping
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: Yin_22
+Built-By: Yin
 Implementation-Vendor-Id: pers.yhf
 Build-Jdk: 1.8.0_102
 Implementation-URL: http://projects.spring.io/spring-boot/distributeds
