@@ -1,8 +1,8 @@
                                               
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   CentOS6.5下的Redis集群安装
+## &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  CentOS6.5下的Redis集群安装
 
-
+## 一，Redis集群安装  <br>
 
 &nbsp;1.准备一台Linux虚拟机(此处是CentOS6.5)开设6个端口， 此处开设6000, 6001,6002,6003,6004,6005 共6个端口。<br>
 &nbsp;2 准备一个远程连接工具如winscp用于向Linux虚拟机上传文件，同时准备一个securityCRT软件用来远程连接Linux虚拟机以便于远程配置与调试<br>
@@ -59,4 +59,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  需要注意的是，Sringboot连接redis集群时会出现错误  <font size="3" color="red">No reachable node in cluster </font>  <br>
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  原因在于对于redis3.0的集群，用jedis的JedisCluster.close()方法造成的集群连接关闭的情况。 jedisCluster内部使用了池化技术，每次使用完毕都会自动释放Jedis因此不需要关闭。如果调用close方法后再调用jedisCluster的api进行操作时就会出现这样的错误。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  原因在于对于redis3.0的集群，用jedis的JedisCluster.close()方法造成的集群连接关闭的情况。 jedisCluster内部使用了池化技术，每次使用完毕都会自动释放Jedis因此不需要关闭。如果调用close方法后再调用jedisCluster的api进行操作时就会出现这样的错误。   <br>
+
+## 二，Redis集群相关操作
+
+1. 添加结点   <br>
+    添加新的节点的基本过程实际上是添加一个空的节点然后移动一些数据给它，存在两种情况，1)添加一个主结点 2)添加一个从结点。  <br>
+    1)添加主结点   <br>
+     以本例说明，现在在原有基础上添加一个6006端口的Redis结点。首先在复制一份6006端口文件目录，并且修改redis.conf中如下信息：
+     
+     
