@@ -73,4 +73,8 @@
     其次，启动6006端口Redis结点，并且使用redis-trib 添加该结点到现有的集群中去。 如下二图所示： <br>
     ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/3-1.png)  <br>
     ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/3-2.png)  <br>
-    
+    其中对于命令 ./src/redis-trib.rb add-node 192.168.1.115:6006 192.168.1.115:6005，192.168.1.115:6006为待添加结点，而
+ 192.168.1.115:6005为源结点。  <br>
+ (https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/4.png)  <br>
+        此时新节点现在已经连接上了集群， 成为集群的一份子， 并且可以对客户端的命令请求进行转向了， 但是和其他主节点相比， 新节点还有两点区别：1)新节点没有包含任何数据， 因为它没有包含任何哈希槽; 2)尽管新节点没有包含任何哈希槽， 但它仍然是一个主节点， 所以在集群需要将某个从节点升级为新的主节点时， 这个新节点不会被选中。
+ 
