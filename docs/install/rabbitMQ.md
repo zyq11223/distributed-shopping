@@ -1,4 +1,4 @@
-## RabbitMQ消息队列
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ## RabbitMQ消息队列
 
 1.下载最新版本的erlang到文件夹opt中，当前版本是20.2      <br>
  
