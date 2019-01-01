@@ -66,7 +66,7 @@
 1. 添加结点   <br>
     添加新的节点的基本过程实际上是添加一个空的节点然后移动一些数据给它，存在两种情况，1)添加一个主结点 2)添加一个从结点。  <br>
     1)添加主结点   <br>
-     以本例说明，现在在原有基础上添加一个6006端口的Redis结点。首先在复制一份6006端口文件目录，并且修改redis.conf中如下信息：
+     以本例说明，现在在原有基础上添加一个6006端口的Redis结点。首先在复制一份6006端口文件目录，并且修改redis.conf中如下二图所示：
     ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/1.png)  <br>
     ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/2.png)  <br>
     
