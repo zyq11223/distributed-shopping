@@ -43,3 +43,5 @@ yum install ncurses ncurses-base ncurses-devel ncurses-libs ncurses-static ncurs
 浏览器输入IP地址，与端口号15672, 然后在输入地址进入管理页面     <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![输入图片说明](https://images.gitee.com/uploads/images/2018/1220/115355_4a8b1e42_1648495.png "屏幕截图.png")    <br>
 
+### 二，RabbitMQ消息队列模式
+
