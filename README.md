@@ -37,9 +37,9 @@
 - [Session工作原理](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/theory/session.md)
 - [超卖问题处理](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/oversold/oversold.md)
 - [弃用JSP原因](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/structure/jspleave.md)
-- [Docker环境配置](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/install/docker.md) <br>
--  [RabbitMQ消息队列安装](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/install/rabbitMQ.md)   <br>
--  [Redis集群安装配置](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/install/rediscluster.md)
+- [Docker](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/install/docker.md) <br>
+-  [RabbitMQ消息队列](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/install/rabbitMQ.md)   <br>
+-  [Redis集群](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/install/rediscluster.md)
 - MySQL读写分离配置
 - Docker部署项目流程
 
