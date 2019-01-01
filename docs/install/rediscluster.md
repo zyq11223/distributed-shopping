@@ -69,3 +69,4 @@
      以本例说明，现在在原有基础上添加一个6006端口的Redis结点。首先在复制一份6006端口文件目录，并且修改redis.conf中如下信息：
      
      
+    ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/1.png)  <br>
