@@ -22,7 +22,7 @@ import redis.clients.jedis.JedisCluster;
 @Configuration
 @ConditionalOnClass(JedisCluster.class) 
 public class JedisClusterConfig {
-
+ 
 	@Value("${redis.cache.expireSeconds}")
 	private int expireSeconds;
 	

@@ -76,7 +76,8 @@
     其中对于命令 ./src/redis-trib.rb add-node 192.168.1.115:6006 192.168.1.115:6005，192.168.1.115:6006为待添加结点，而
  192.168.1.115:6005为源结点。  <br>
  ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/4.png)  <br>
-        此时新节点现在已经连接上了集群， 然而新节点没有包含任何数据， 因为它没有包含任何哈希槽，而没有分配哈希槽的话表示就没有存储数据的能力，故我们需要将其他节点上的哈希槽分配到这个节点上。进入一个客户端进入redis目录下执行 ./src/redis-trib.rb reshard 192.168.1.115:6005， 就可以看到如下图所示的提示，当问我们需要移动多少个哈希槽时，此处移动1000个。<br>
+        此时新节点现在已经连接上了集群， 然而新节点没有包含任何数据， 因为它没有包含任何哈希槽，而没有分配哈希槽的话表示就没有存储数据的能力，故我们需要将其他节点上的哈希槽分配到这个节点上。进入一个客户端进入redis/src目录下执行 ./redis-trib.rb reshard 192.168.1.115:6005，当问我们需要移动多少个哈希槽时，此处移动1000个, 结果如下图所示的提示。<br>
+     ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/5.jpg)  <br>    
   
    
  
