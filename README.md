@@ -41,7 +41,6 @@
 -  [RabbitMQ消息队列](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/install/rabbitMQ.md)   <br>
 -  [Redis集群](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/install/rediscluster.md)
 - MySQL读写分离配置
-- Docker部署项目流程
 
 ####  作者声明
 - [本人声明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/declaration.md)
