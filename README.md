@@ -26,16 +26,11 @@
 - Springboot启动过程
 - [Mybatis基本工作原理](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/theory/mybatis.md)
 
-#### 优化策略
-- Tomcat优化
-- SQL优化
-
 #### 网络技术
 - Http协议原理
 - TCP协议介绍
 - [重定向与转发](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/network/forward_redirect.md)
 
- 
 #### 架构设计
 - [Session工作原理](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/theory/session.md)
 - [超卖问题处理](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/oversold/oversold.md)
@@ -44,6 +39,8 @@
 -  [RabbitMQ消息队列](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/install/rabbitMQ.md)   <br>
 -  [Redis集群](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/install/rediscluster.md)
 - MySQL读写分离配置
+- Tomcat优化
+- SQL优化
 
 ####  作者声明
 - [本人声明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/declaration.md)
