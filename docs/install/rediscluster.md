@@ -84,11 +84,12 @@
      ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/6.jpg)  <br>    
      此时，出现红圈标注的错误，此时只需将该点拥有的slots全部迁移出去即可。如下二图所示。 <br>
      执行脚本：./redis-trib.rb reshard 192.168.1.115:6006
-     ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/7.jpg)  <br>   
+     ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/7.jpg)  <br>
      ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/8.jpg)  <br>
-     
-     
-     
+     如图，出现红圈标注的错误，换成一个master结点即可，如下诸图所示。
+     ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/9.jpg)  <br>
+      ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/10.jpg)  <br>
+      ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/11.jpg)  <br>
      
      
      
