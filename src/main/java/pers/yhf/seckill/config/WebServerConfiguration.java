@@ -26,7 +26,7 @@ class MyTomcatConnectorCustomizer implements TomcatConnectorCustomizer
 	{
 		Http11NioProtocol protocol = (Http11NioProtocol) connector.getProtocolHandler();
 		//Http11Protocol protocol = (Http11Protocol) connector.getProtocolHandler();
-		
+		 
 		
 		//设置最大连接数
 		protocol.setMaxConnections(2000);
