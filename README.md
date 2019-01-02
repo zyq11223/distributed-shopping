@@ -1,8 +1,5 @@
 # &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;技术清单
- 
- |        |          |        |     |      |          |      |          |
-| ------ | -------- | ------ | --- | ---- | -------- | ---- | -------- |
-| 数据库 | 设计模式 | 多线程 | JVM | 框架原理 | 网络技术 | 架构设计 | 联系作者 |
+  
 
 #### 数据库
 - SQL执行顺序
