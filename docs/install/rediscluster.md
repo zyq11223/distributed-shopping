@@ -94,6 +94,11 @@
     ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/12.jpg)  <br>  
     接着，即可正常删除结点6006，如下图所示。
      ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/13.jpg)  <br>  
+    查看集群信息，发现6006结点已经消失，删除成功，如下图。
+    ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/14.jpg)  <br>
+    
+    
+    
     
     
      
