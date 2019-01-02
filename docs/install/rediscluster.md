@@ -82,4 +82,15 @@
 2. 删除结点   <br>
    进入redis/src目录下，使用命令 ./redis-trib.rb del-node 192.168.1.115:6006 5193ca8763396a8ca1172ca1a7a2b64226f657a7， 如下图所示。
      ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/6.jpg)  <br>    
+     此时，出现红圈标注的错误，此时只需将该点拥有的slots全部迁移出去即可。如下二图所示。 <br>
+     执行脚本：./redis-trib.rb reshard 192.168.1.115:6006
+     ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/7.jpg)  <br>   
+     ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/8.jpg)  <br>
+     
+     
+     
+     
+     
+     
+      
  
