@@ -97,9 +97,9 @@
     查看集群信息，发现6006结点已经消失，删除成功，如下图。
     ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/14.jpg)  <br>
     
-    
-    
-    
+ 3. Redis集群高可用   <br>   
+    在Redis集群安装过程中，我们可以看出，主库6002对应的从库为6005，如下图所示。
+    ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/5.png)  <br>
     
      
       
