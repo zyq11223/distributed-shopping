@@ -44,7 +44,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 安装ruby和redis的接口程序 下载 redis-3.0.4.gem，拷贝redis-3.0.4.gem至/usr/local下， 执行命令： gem install/usr/local/redis-3.0.4.gem <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   步骤 8： <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 分别启动6个实例。启动实例进入src下或者/usr/local/bin下执行以下指令，以执行端口号6000对应的redis服务器为例，redis-server /usr/local/redis/cluster/6000/redis.conf     执行其他5个端口号对应的redis服务器仿此执行<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 接着，需要创建6个目录,对应6个redis实例,在创建集群时,将分三个主实例,三个从实例。由于redis-trib.rb工具默认至少需要三个实例方可创建集群,这也是为了集群的自动故障转移功能可用,若某个主结点挂了,会自动选举一个它的从结点替代它作为主节点。此处分别启动6个实例。启动实例进入src下或者/usr/local/bin下执行以下指令，以执行端口号6000对应的redis服务器为例，redis-server /usr/local/redis/cluster/6000/redis.conf     执行其他5个端口号对应的redis服务器仿此执行<br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   步骤 9： <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  启动集群redis-trib.rb指令在在安装目录src下执行命令  vim /etc/sysconfig/iptables， 开放6000、6001等6个端口或执行chkconfig iptables off 启动自动关闭防火墙，重启后有效。<br>
