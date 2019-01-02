@@ -90,8 +90,10 @@
      ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/9.jpg)  <br>
       ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/10.jpg)  <br>
       ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/11.jpg)  <br>
-     
-     
+     查看集群结点信息，可以看到6006结点已经没有插槽了。
+    ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/12.jpg)  <br>  
+    
+    
      
       
  
