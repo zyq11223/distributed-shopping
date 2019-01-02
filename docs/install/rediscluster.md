@@ -100,7 +100,8 @@
  3. Redis集群高可用   <br>   
     在Redis集群安装过程中，我们可以看出，主库6002对应的从库为6005，如下图所示。
     ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/5.png)  <br>
-    
+    在主库6002写入测试数据，结果在6002对应的6005从库上可以读取写入的数据，如下图所示。
+     ![输入图片说明](https://github.com/yhf56davis/distributed-shopping/blob/master/docs/img/RedisClusterImg/15.jpg)  <br>
      
       
  
