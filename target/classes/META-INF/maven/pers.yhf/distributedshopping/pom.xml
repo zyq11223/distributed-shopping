@@ -6,7 +6,7 @@
   <packaging>jar</packaging>
   
   
-  <parent>
+   <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.9.RELEASE</version>
@@ -99,13 +99,42 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
-        
-        
-
+         
     </dependencies>
   
   
-  
+  <build>
+        <plugins>
+        
+        <!-- 打包跳过测试包 -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <configuration>
+             <skip>true</skip>
+          </configuration>
+        </plugin>
+        
+        <!-- 缺少该配置会出现找不到主入口的问题，Jar包无法运行起来 -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            
+        </plugins>
+        
+        <resources>
+           <resource>
+             <directory>src/main/java</directory>
+              <includes>
+                <include>**/*.properties</include>
+                <include>**/*.xml</include>
+              </includes>
+              <filtering>false</filtering>
+           </resource>
+        </resources>
+        
+    </build>
   
   
   
