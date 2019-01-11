@@ -98,6 +98,7 @@ public class SecKillController implements InitializingBean{
 	     //req1判断库存 可以购买，req2同样OK
 	     //两个请求再同时判断是否秒杀到了，显然两个请求都没有秒杀到
 	     //结果创建了两个订单，也就是说一个用户秒杀了两件商品
+	      
 	     
 	     //2 预减库存
 	     long stock = redisService.decr(SecKillActivityKey.getSecKillGoodsStock, ""+goodsId);
