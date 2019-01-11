@@ -31,11 +31,15 @@ public class JedisClusterConfig {
 	
 	@Value("${redis.cache.commandTimeout}")
     private int commandTimeout; 
+	
+	@Value("${redis.limit}")     
+	private int limit;
 	 
 	/*@Autowired
     private RedisProperties redisProperties;*/
 
-    /**
+  
+	/**
      * 注意：
      * 这里返回的JedisCluster是单例的，并且可以直接注入到其他类中去使用
      * @return
@@ -111,5 +115,13 @@ public class JedisClusterConfig {
 		this.commandTimeout = commandTimeout;
 	}
     
+	  public int getLimit() {
+			return limit;
+		} 
+	    public void setLimit(int limit) {
+			this.limit = limit;
+		}
+
+
 
 }
